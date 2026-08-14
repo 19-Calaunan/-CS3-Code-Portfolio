@@ -1,25 +1,23 @@
-year = int(input("Enter year of birth"))
+year = int(input("Enter your year of birth: "))
 
-if year = 1900:
-  print("Invalid Year, it should not be earlier than 1900")
+if year < 1900:
+    print("Invalid year. The year of birth should not be earlier than 1900.")
 else:
-  
-  zodiac = [
-  i. Rat (鼠 / Shǔ)
-  ii. Ox (牛 / Niú)
-  iii. Tiger (虎 / Hǔ)
-  iv. Rabbit (兔 / Tù)
-  v. Dragon (龙 / Lóng)
-  vi. Snake (蛇 / Shé)
-  vii. Horse (马 / Mǎ)
-  viii. Goat (羊 / Yáng)
-  ix. Monkey (猴 / Hóu)
-  x. Rooster (鸡 / Jī)
-  xi. Dog (狗 / Gǒu)
-  xii. Pig (猪 / Zhū)
+    zodiac = [
+        "Rat (鼠 / Shǔ)",
+        "Ox (牛 / Niú)",
+        "Tiger (虎 / Hǔ)",
+        "Rabbit (兔 / Tù)",
+        "Dragon (龙 / Lóng)",
+        "Snake (蛇 / Shé)",
+        "Horse (马 / Mǎ)",
+        "Goat (羊 / Yáng)",
+        "Monkey (猴 / Hóu)",
+        "Rooster (鸡 / Jī)",
+        "Dog (狗 / Gǒu)",
+        "Pig (猪 / Zhū)"
     ]
 
-index = (year-1900) % 12
-print("Your Chinese Zodiac sign is: [zodiac]{index} ")
+    index = (year - 1900) % 12
 
-
+    print("Your Chinese Zodiac sign is:", zodiac[index])
