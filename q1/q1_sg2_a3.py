@@ -1,7 +1,7 @@
 year = int(input("Enter your year of birth: "))
 
 if year < 1900:
-    print("Invalid year. The year of birth should not be earlier than 1900.")
+    print("Invalid year, The year of birth should not be earlier than 1900.")
 else:
     zodiac = [
         "Rat (鼠 / Shǔ)",
