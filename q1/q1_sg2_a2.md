@@ -1,4 +1,4 @@
-CN #: 19, 20, 21
+CN #: 19, 20, 21 (Calaunan, Canto, Magtoto)
 9-Arayat
 08/16/26
 
@@ -55,4 +55,6 @@ The algorithm should check if the input is a list, empty, undefined value, or no
 6. Final Answer
    
 Based on your answers from 1 to 5, which one is the better algorithm that you will use to solve the problem of finding the highest number? Why? Summarize your answer
+
+Pseudocode 1 is better as it is more concise, easily understandable and testable, and has less chance of error.
 
