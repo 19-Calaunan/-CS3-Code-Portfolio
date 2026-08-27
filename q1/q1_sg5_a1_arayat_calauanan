@@ -7,13 +7,13 @@ class Hero:
     def take_damage(self, amount):
         
         self.hp -= amount
-        arthur = Hero("Arthur", 100)
-        morgana = Hero("Morgana", 100)
+arthur = Hero("Arthur", 100)
+morgana = Hero("Morgana", 100)
         arthur.take_damage(10)
         
-        print(f"{arthur.name}'s HP:
-            {arthu.hp}")
-        print(f"{morgana.name}'s HP:
-            {morgana.hp}')
+print(f"{arthur.name}'s HP:
+        {arthu.hp}")
+print(f"{morgana.name}'s HP:
+        {morgana.hp}')
        
 
