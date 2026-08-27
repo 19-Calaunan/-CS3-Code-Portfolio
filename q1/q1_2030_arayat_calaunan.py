@@ -5,10 +5,10 @@ class Car:
         self.battery = battery
         distance = 0
     def go(self, distance):
-        s = self.distance / 25
-        battery -= self.battery - s
+        s = distance / 25
+        self.battery -= self.battery - s
         print ("We traveled", distance, "km")
-        print ("Your", self.brand, sel.model, self.battery, "wH left")
+        print ("Your", self.brand, self.model, self.battery, "wH left")
     def charge(self, wH):
         self.battery = self.battery + wH
         print("You charged", wH, "wH")
@@ -28,4 +28,5 @@ while myCar.battery>0:
     else:
         print("Invalid command")
 print ("Your car ran out of battery")
+
 
