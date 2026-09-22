@@ -1,0 +1,26 @@
+class Car:
+    def __init__(self, brand, model, battery=35):
+        self.brand = brand
+        self.model = model
+        self.__battery = battery
+        self.__odometer = 0
+
+    def go(self, distance):
+        self.__battery -= distance / 20
+        self.__odometer += distance
+        print("The car traveled", distance, "km")
+        print("You have", self.__battery, "Wh left")
+
+    def charge(self, Wh):
+        self.__battery += Wh
+        print("Car recharged. You now have", self.__battery, "Wh")
+
+    def dashboard(self):
+        print("Battery:", self.__battery, "Wh")
+        print("Odometer:", self.__odometer, "KM")
+
+
+mycar = Car("BYD", "Seal 5")
+mycar.go(100)
+mycar.charge(5)
+mycar.dashboard()
